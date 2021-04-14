@@ -392,6 +392,7 @@ class DatePicker extends Component {
                   >
                     <View pointerEvents={this.state.allowPointerEvents ? 'auto' : 'none'}>
                       <DatePickerIOS
+                        display={'spinner'}
                         value={this.state.date}
                         mode={mode}
                         minimumDate={minDate && this.getDate(minDate)}
