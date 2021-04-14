@@ -6,13 +6,13 @@ import {
   Image,
   Modal,
   TouchableHighlight,
-  DatePickerAndroid,
-  TimePickerAndroid,
-  DatePickerIOS,
   Platform,
   Animated,
   Keyboard
 } from 'react-native';
+import DatePickerAndroid from '@react-native-community/datetimepicker/src/datepicker.android'
+import TimePickerAndroid from '@react-native-community/datetimepicker/src/timepicker.android'
+import DatePickerIOS from '@react-native-community/datetimepicker/src/datetimepicker.ios'
 import Style from './style';
 import Moment from 'moment';
 
@@ -392,7 +392,7 @@ class DatePicker extends Component {
                   >
                     <View pointerEvents={this.state.allowPointerEvents ? 'auto' : 'none'}>
                       <DatePickerIOS
-                        date={this.state.date}
+                        value={this.state.date}
                         mode={mode}
                         minimumDate={minDate && this.getDate(minDate)}
                         maximumDate={maxDate && this.getDate(maxDate)}
