@@ -10,9 +10,9 @@ import {
   Animated,
   Keyboard
 } from 'react-native';
-import DatePickerAndroid from '@react-native-community/datetimepicker/src/datepicker.android'
-import TimePickerAndroid from '@react-native-community/datetimepicker/src/timepicker.android'
-import DatePickerIOS from '@react-native-community/datetimepicker/src/datetimepicker.ios'
+import DatePickerAndroid from '@react-native-community/datetimepicker/src/datepicker.android';
+import TimePickerAndroid from '@react-native-community/datetimepicker/src/timepicker.android';
+import DatePickerIOS from '@react-native-community/datetimepicker/src/datetimepicker.ios';
 import Style from './style';
 import Moment from 'moment';
 
