@@ -269,8 +269,8 @@ class DatePicker extends Component {
       if (mode === 'date') {
         DatePickerAndroid.open({
           date: this.state.date,
-          minDate: minDate && this.getDate(minDate),
-          maxDate: maxDate && this.getDate(maxDate),
+          minimumDate: minDate && this.getDate(minDate),
+          maximumDate: maxDate && this.getDate(maxDate),
           mode: androidMode
         }).then(this.onDatePicked);
       } else if (mode === 'time') {
@@ -289,8 +289,8 @@ class DatePicker extends Component {
 
         DatePickerAndroid.open({
           date: this.state.date,
-          minDate: minDate && this.getDate(minDate),
-          maxDate: maxDate && this.getDate(maxDate),
+          minimumDate: minDate && this.getDate(minDate),
+          maximumDate: maxDate && this.getDate(maxDate),
           mode: androidMode
         }).then(this.onDatetimePicked);
       }
